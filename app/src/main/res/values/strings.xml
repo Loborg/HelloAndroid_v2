@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">HelloAndroid</string>
+    <string name="icon_phone">&#xf098;</string> <!--&#xf098;-->
+    <string name="icon_city">&#xf015;</string> <!--&#xf015;-->
+    <string name="icon_adr">&#xf08d;</string> <!--&#xf08d;-->
+    <string name="icon_zip">&#xf292;</string> <!--&#xf08d;-->
+    <string name="icon_web">&#xf0ac;</string>
+</resources>
