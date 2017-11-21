@@ -5,4 +5,11 @@
     <string name="icon_adr">&#xf08d;</string> <!--&#xf08d;-->
     <string name="icon_zip">&#xf292;</string> <!--&#xf08d;-->
     <string name="icon_web">&#xf0ac;</string>
+
+    <string name="tel">650-555-5555</string>
+    <string name="city">Mountain View</string>
+    <string name="street">2465 Latham St</string>
+    <string name="zip">CA 94043</string>
+    <string name="web">www.udacity.com</string>
+    <string name="hedline">Udacity</string>
 </resources>

@@ -1,68 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_height="match_parent"
     android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:background="#fafbfc">
 
     <ImageView
-        android:src="@drawable/udacity_logo"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
         android:paddingRight="10dp"
+        android:paddingTop="8dp"
         android:scaleType="fitStart"
-        android:paddingTop="8dp"/>
+        android:src="@drawable/udacity_logo"/>
 
     <ImageView
         android:id="@+id/uda_img"
-        android:src="@drawable/android_udacity"
         android:layout_width="match_parent"
         android:layout_height="215dp"
-        android:scaleType="fitStart" />
+        android:scaleType="fitStart"
+        android:src="@drawable/android_udacity" />
 
     <TextView
-        android:text="Udacity"
         android:id="@+id/uda_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/uda_img"
+        android:fontFamily="@font/agency_fb"
         android:gravity="center"
         android:padding="8dp"
-        android:textStyle="bold|italic"
+        android:text="@string/hedline"
         android:textSize="40sp"
-        android:fontFamily="@font/agency_fb"/>
+        android:textStyle="bold|italic"/>
 
     <Button
         android:id="@+id/web_button"
-        android:text="@string/icon_web"
-        android:textColor="@color/iconColor"
-        android:textSize="25sp"
-        android:fontFamily="@font/agency_fb"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/uda_name"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="32dp"/>
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/agency_fb"
+        android:text="@string/icon_web"
+        android:textColor="@color/iconColor"
+        android:textSize="25sp"/>
         <!--For onClick-->
             <!--android:onClick="showWebadress"-->
 
     <TextView
         android:id="@+id/webpage"
-        android:text="www.udacity.com"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/web_button"
         android:layout_centerHorizontal="true"
+        android:autoLink="web"
         android:fontFamily="@font/agency_fb"
+        android:text="@string/web"
+        android:textColorLink="@color/iconColor"
         android:textSize="25sp"
         android:visibility="invisible"/>
 
     <LinearLayout
-        android:orientation="vertical"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
+        android:orientation="vertical"
         android:paddingLeft="16dp">
 
         <LinearLayout
@@ -70,22 +72,22 @@
             android:layout_height="wrap_content">
             <TextView
                 android:id="@+id/phone_icon"
-                android:text="@string/icon_phone"
-                android:textSize="25sp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="@color/iconColor"/>
+                android:text="@string/icon_phone"
+                android:textColor="@color/iconColor"
+                android:textSize="25sp"/>
 
             <TextView
                 android:id="@+id/uda_phone"
-                android:text="650-555-5555"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/agency_fb"
                 android:gravity="bottom"
                 android:padding="8dp"
-                android:textSize="20sp"
-                android:fontFamily="@font/agency_fb"
-                android:textColor="@color/textColor"/>
+                android:text="@string/tel"
+                android:textColor="@color/textColor"
+                android:textSize="20sp"/>
         </LinearLayout>
 
         <LinearLayout
@@ -93,33 +95,33 @@
             android:layout_height="wrap_content">
             <TextView
                 android:id="@+id/city_icon"
-                android:text="@string/icon_city"
-                android:textSize="25sp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="@color/iconColor"/>
+                android:text="@string/icon_city"
+                android:textColor="@color/iconColor"
+                android:textSize="25sp"/>
 
             <TextView
                 android:id="@+id/city"
-                android:text="Mountain View"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/agency_fb"
                 android:gravity="bottom"
                 android:padding="8dp"
-                android:textSize="20sp"
-                android:fontFamily="@font/agency_fb"
-                android:textColor="@color/textColor"/>
+                android:text="@string/city"
+                android:textColor="@color/textColor"
+                android:textSize="20sp"/>
         </LinearLayout>
 
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/linear_1"
-        android:orientation="vertical"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:orientation="vertical"
         android:paddingRight="16dp">
 
             <LinearLayout
@@ -127,21 +129,21 @@
                 android:layout_height="wrap_content">
             <TextView
                 android:id="@+id/adr_icon"
-                android:text="@string/icon_adr"
-                android:textSize="25sp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="@color/iconColor"/>
+                android:text="@string/icon_adr"
+                android:textColor="@color/iconColor"
+                android:textSize="25sp"/>
 
             <TextView
                 android:id="@+id/street"
-                android:text="2465 Latham St"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:padding="8dp"
-                android:textSize="20sp"
                 android:fontFamily="@font/agency_fb"
-                android:textColor="@color/textColor"/>
+                android:padding="8dp"
+                android:text="@string/street"
+                android:textColor="@color/textColor"
+                android:textSize="20sp"/>
             </LinearLayout>
 
             <LinearLayout
@@ -149,11 +151,11 @@
                 android:layout_height="wrap_content">
             <TextView
                 android:id="@+id/zip_icon"
-                android:text="@string/icon_zip"
-                android:textSize="25sp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="@color/iconColor"/>
+                android:text="@string/icon_zip"
+                android:textColor="@color/iconColor"
+                android:textSize="25sp"/>
 
                 <TextView
                     android:id="@+id/zipcode"
@@ -162,7 +164,7 @@
                     android:fontFamily="@font/agency_fb"
                     android:gravity="right"
                     android:padding="8dp"
-                    android:text="CA 94043"
+                    android:text="@string/zip"
                     android:textColor="@color/textColor"
                     android:textSize="20sp" />
             </LinearLayout>
