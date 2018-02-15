@@ -18,9 +18,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.layout_business);
 
-        /*TextView text_1 = (TextView)findViewById(R.id.uda_name);
-        text_1.setText("UdaCity");*/
-
         Typeface font = Typeface.createFromAsset( getAssets(), "fontawesome-webfont.ttf" );
         TextView phone_icon = (TextView)findViewById(R.id.phone_icon);
         phone_icon.setTypeface(font);
@@ -36,29 +33,14 @@ public class MainActivity extends AppCompatActivity {
 
         web_button = (Button)findViewById(R.id.web_button);
         web_button.setTypeface(font);
-
-        //For onClick
-       /* web_button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v){
-                showWebadress(v);
-            }
-        });*/
-
-        web_button.setOnTouchListener(new View.OnTouchListener() {
-            @Override
-            public boolean onTouch(View view, MotionEvent event) {
-                TextView webpage = (TextView)findViewById(R.id.webpage);
-                if (webpage.getVisibility() == View.INVISIBLE) {
-                    webpage.setVisibility(View.VISIBLE);
-                }
-                return true;
-            }
-        });
     }
 
-    //For onClick
-    /*public void showWebadress(View v){
-        web_button.setVisibility(View.VISIBLE);
-    };*/
+    public void showWebadress(View v){
+        TextView webpage = (TextView)findViewById(R.id.webpage);
+        if (webpage.getVisibility() == View.INVISIBLE) {
+            webpage.setVisibility(View.VISIBLE);
+        } else {
+            webpage.setVisibility(View.INVISIBLE);
+        }
+    };
 }

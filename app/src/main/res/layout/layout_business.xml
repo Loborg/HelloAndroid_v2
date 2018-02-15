@@ -43,9 +43,8 @@
         android:fontFamily="@font/agency_fb"
         android:text="@string/icon_web"
         android:textColor="@color/iconColor"
-        android:textSize="25sp"/>
-        <!--For onClick-->
-            <!--android:onClick="showWebadress"-->
+        android:textSize="25sp"
+        android:onClick="showWebadress"/>
 
     <TextView
         android:id="@+id/webpage"
