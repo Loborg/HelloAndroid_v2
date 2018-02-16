@@ -1,15 +1,15 @@
 <resources>
-    <string name="app_name">HelloAndroid</string>
+    <string name="app_name">Antikvárium.hu Kft.</string>
     <string name="icon_phone">&#xf098;</string> <!--&#xf098;-->
     <string name="icon_city">&#xf015;</string> <!--&#xf015;-->
     <string name="icon_adr">&#xf08d;</string> <!--&#xf08d;-->
     <string name="icon_zip">&#xf292;</string> <!--&#xf08d;-->
     <string name="icon_web">&#xf0ac;</string>
 
-    <string name="tel">650-555-5555</string>
-    <string name="city">Mountain View</string>
-    <string name="street">2465 Latham St</string>
-    <string name="zip">CA 94043</string>
-    <string name="web">www.udacity.com</string>
-    <string name="hedline">Udacity</string>
+    <string name="tel">+3645524229</string>
+    <string name="city">Szeged</string>
+    <string name="street">Makai út 29.</string>
+    <string name="zip">6771</string>
+    <string name="web">www.antikvarium.hu</string>
+    <string name="hedline">Antikvárium.hu</string>
 </resources>

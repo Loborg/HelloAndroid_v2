@@ -6,10 +6,20 @@
     android:background="#fafbfc">
 
     <ImageView
+        android:id="@+id/logo"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:paddingRight="10dp"
+        android:paddingTop="8dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/app_logo_smal"/>
+
+    <ImageView
         android:id="@+id/uda_img"
         android:layout_width="match_parent"
-        android:layout_height="215dp"
         android:layout_marginTop="10dp"
+        android:layout_height="150dp"
         android:scaleType="fitCenter"
         android:src="@drawable/app_logo_main" />
 
@@ -29,36 +39,37 @@
         android:id="@+id/web_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/uda_name"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="32dp"
+        android:layout_above="@+id/uda_name"
+        android:layout_alignEnd="@+id/linearLayout"
+        android:layout_alignRight="@+id/linearLayout"
         android:fontFamily="@font/agency_fb"
+        android:onClick="showWebadress"
         android:text="@string/icon_web"
         android:textColor="@color/iconColor"
-        android:textSize="25sp"
-        android:onClick="showWebadress"/>
+        android:textSize="25sp" />
 
     <TextView
         android:id="@+id/webpage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/web_button"
+        android:layout_below="@+id/uda_name"
         android:layout_centerHorizontal="true"
         android:autoLink="web"
         android:fontFamily="@font/agency_fb"
         android:text="@string/web"
-        android:textColor="@color/iconColor"
-        android:textSize="20sp"
-        android:visibility="invisible"
         android:textAllCaps="true"
-        android:textIsSelectable="false"/>
+        android:textColor="@color/iconColor"
+        android:textIsSelectable="false"
+        android:textSize="20sp"
+        android:visibility="invisible" />
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:orientation="vertical"
-        android:paddingLeft="16dp">
+        android:paddingLeft="16dp"
+        android:id="@+id/linearLayout">
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -117,9 +128,9 @@
         android:orientation="vertical"
         android:paddingRight="16dp">
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
             <TextView
                 android:id="@+id/adr_icon"
                 android:layout_width="wrap_content"
@@ -137,11 +148,11 @@
                 android:text="@string/street"
                 android:textColor="@color/textColor"
                 android:textSize="20sp"/>
-            </LinearLayout>
+        </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
             <TextView
                 android:id="@+id/zip_icon"
                 android:layout_width="wrap_content"
@@ -150,17 +161,17 @@
                 android:textColor="@color/iconColor"
                 android:textSize="25sp"/>
 
-                <TextView
-                    android:id="@+id/zipcode"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/agency_fb"
-                    android:gravity="right"
-                    android:padding="8dp"
-                    android:text="@string/zip"
-                    android:textColor="@color/textColor"
-                    android:textSize="20sp" />
-            </LinearLayout>
+            <TextView
+                android:id="@+id/zipcode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/agency_fb"
+                android:gravity="right"
+                android:padding="8dp"
+                android:text="@string/zip"
+                android:textColor="@color/textColor"
+                android:textSize="20sp" />
+        </LinearLayout>
 
     </LinearLayout>
 </RelativeLayout>
